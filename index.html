@@ -1,189 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aliya ❤️</title>
+  <title>Aliya 💖</title>
   <style>
     body {
-      margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #ffb6ff, #b5ffff);
-      color: #333;
+      background: linear-gradient(135deg, #ffd6e8, #b3e5fc);
+      margin: 0;
+      padding: 0;
       text-align: center;
-      overflow-x: hidden;
     }
 
     h1 {
-      font-size: 3em;
-      margin-top: 60px;
-      color: #ff007f;
-      text-shadow: 0 0 10px rgba(255, 0, 128, 0.3);
+      font-size: 2.5em;
+      color: #ff4081;
+      margin-top: 30px;
     }
 
-    p.tagline {
-      font-style: italic;
-      color: #555;
-      margin-top: 10px;
-    }
-
-    .menu {
+    h2 {
+      color: #333;
       margin-top: 40px;
     }
 
-    .menu button {
-      background-color: #ff6fb1;
+    .button {
+      display: inline-block;
+      background: #ff69b4;
       color: white;
-      border: none;
-      border-radius: 25px;
-      padding: 12px 30px;
-      margin: 10px;
-      font-size: 1em;
-      cursor: pointer;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
       transition: 0.3s;
     }
 
-    .menu button:hover {
-      background-color: #ff94c2;
+    .button:hover {
+      background: #ff1493;
       transform: scale(1.05);
     }
 
-    section {
-      margin: 40px auto;
-      width: 90%;
-      max-width: 600px;
-      display: none;
-      animation: fadeIn 1s ease;
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px auto;
+      max-width: 900px;
+      gap: 20px;
     }
 
-    section.active {
-      display: block;
+    .photo {
+      width: 250px;
+      height: 250px;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      background-color: #f8bbd0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-
-    /* Fotoğraflar 2x2 grid */
-    .photo-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      margin-top: 20px;
-    }
-
-    .photo-grid img {
+    .photo img {
       width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    }
-
-    /* Düşen emojiler */
-    .emoji {
-      position: fixed;
-      top: -50px;
-      font-size: 24px;
-      animation: fall 6s linear infinite;
-      opacity: 0.9;
-    }
-
-    @keyframes fall {
-      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
-      100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+      height: 100%;
+      object-fit: cover;
     }
 
     footer {
-      margin: 40px 0;
-      font-size: 0.9em;
-      color: #444;
+      margin-top: 40px;
+      padding: 20px;
+      color: #555;
+      font-size: 1.1em;
     }
   </style>
 </head>
 <body>
-  <h1>Aliya ❤️</h1>
-  <p class="tagline">Every word, every letter, every dot — you are in all of them.</p>
 
-  <div class="menu">
-    <button onclick="showSection('photos')">📸 Fotoğraflar</button>
-    <button onclick="showSection('poems')">📝 Şiirler</button>
-    <button onclick="showSection('quotes')">💬 Sözler</button>
-  </div>
+  <h1>💞 Aliya 💞</h1>
 
-  <!-- Fotoğraflar -->
-  <section id="photos">
-    <h2>Fotoğraflar</h2>
-    <div class="photo-grid">
-      <img src="93649839-639f-47c6-b260-bba3e1eb.jpg" alt="Foto 1">
-      <img src="2c2a0c76-d472-40de-973a-950acf9a.jpg" alt="Foto 2">
-      <img src="211d1874-a02f-4a9a-8cdf1f.jpg" alt="Foto 3">
+  <a href="#sozler" class="button">💬 Sözler</a>
+
+  <h2>📸 Fotoğraflar</h2>
+  <div class="gallery">
+    <div class="photo">
+      <img src="211d1874-a02f-4a9a-81e8-976f9cdf1faf.jpeg" alt="Foto 1">
+    </div>
+    <div class="photo">
+      <img src="2c2a0c76-d472-40de-973a-950acf9a5988.jpeg" alt="Foto 2">
+    </div>
+    <div class="photo">
+      <img src="93649839-639f-47c6-b260-bba3e1eb355b.jpeg" alt="Foto 3">
+    </div>
+    <div class="photo">
       <img src="IMG_0203.jpeg" alt="Foto 4">
     </div>
-  </section>
-
-  <!-- Şiirler -->
-  <section id="poems">
-    <h2>Şiirler</h2>
-    <p>1) All I see is you in every sunrise,<br>
-    Love blooms softly when near,<br>
-    In your eyes I find my forever,<br>
-    You’re my calm, my chaos, my dear,<br>
-    All my roads lead back to you.</p>
-
-    <p>2) Angel of my quiet dreams,<br>
-    Light that melts the dark away,<br>
-    In your smile, the world feels safe,<br>
-    Yesterday fades when you stay,<br>
-    Always, you’re my sweetest day.</p>
-
-    <p>3) As long as hearts can beat,<br>
-    Love will whisper your name,<br>
-    In every breath I take,<br>
-    You’re the spark, the flame,<br>
-    Aliya — my soul’s eternal claim.</p>
-
-    <p>4) At the edge of every thought, you rest,<br>
-    Like a song the stars confess,<br>
-    In your voice, I find my peace,<br>
-    You’re my chaos and release,<br>
-    And my forever happiness.</p>
-
-    <p>5) Aliya, name of grace and light,<br>
-    Living proof that love feels right,<br>
-    In your gaze, time slows to stay,<br>
-    You’re my dawn in shades of gray,<br>
-    All of me is yours, always.</p>
-  </section>
-
-  <!-- Sözler -->
-  <section id="quotes">
-    <h2>Sözler</h2>
-    <p>1. You are my favorite kind of forever.</p>
-    <p>2. Love is you, always you.</p>
-    <p>3. Your smile is my peace.</p>
-    <p>4. In your eyes, I find my home.</p>
-    <p>5. Every heartbeat whispers your name.</p>
-  </section>
+  </div>
 
   <footer>💗 With love, always for Aliya 💗</footer>
 
-  <script>
-    function showSection(id) {
-      document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
-      document.getElementById(id).classList.add("active");
-    }
-
-    // Düşen emojiler
-    const emojis = ["😍", "😘", "💖", "💞", "💓"];
-    setInterval(() => {
-      const emoji = document.createElement("div");
-      emoji.classList.add("emoji");
-      emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-      emoji.style.left = Math.random() * 100 + "vw";
-      emoji.style.animationDuration = (4 + Math.random() * 3) + "s";
-      document.body.appendChild(emoji);
-      setTimeout(() => emoji.remove(), 7000);
-    }, 600);
-  </script>
 </body>
 </html>
